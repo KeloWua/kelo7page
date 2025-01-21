@@ -1,0 +1,144 @@
+body, header, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #f80;
+    color: #fff
+    ;
+}
+
+/* --- HEADER SECTION */ 
+
+
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("header-background.webp");
+    background-size: cover;
+    display: flex;
+}
+
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+.header__img {
+    max-width: 250px;
+    min-width: 60%;
+    border-radius: 50%;
+    border: 6px solid #fff9;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+}
+
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f809;
+    position: absolute;
+    z-index: 1;
+}
+
+/* --- NAVBAR SECTION */
+
+.nav {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #0006;
+}
+
+
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.nav__item {
+    list-style: none;
+}
+
+
+
+.nav__logo-container {
+    flex-grow: 1;
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+}
+
+.nav__link {
+    color: #f80;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.2s, outline 0.2s, outline-offset 0.3s; 
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    border-radius: 20px;
+    background-color: #f804;
+    outline: 2px solid #f809;
+    outline-offset: -7px;
+}
+
+
+
+.link--login {
+    background-color: #f80;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-left: 6px;
+}
+
+.link--login:hover {
+    background-color: #d61;
+    outline: none;
+}
+
+.nav__logo {
+    width: 70px;
+}
+
+
+/*  MAIN  SECTION  */
+
+main {
+    max-width: 800px;
+    margin: auto;
+    text-wrap: pretty;
+    font-size: 30px;
+}
